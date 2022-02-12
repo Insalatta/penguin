@@ -1,0 +1,213 @@
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;  
+    background-color:lightblue;
+    height:100vh;
+}
+.wrapper{
+    position:absolute;
+    width:400px;
+    height:400px;
+    display:flex; 
+    justify-content:center;
+    align-items:center;  
+    
+}
+.head{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    width:120px;
+    height:100px;
+    border-radius:50%;
+    background-color:black;  
+}
+.body{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    top:80px;
+    width:140px;
+    height:130px;
+    border-radius:50%;
+    background-color:black;
+    
+}
+.legs{
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hands{
+    display:flex;
+    position:absolute;
+    justify-content:center;
+    align-items:center;
+}
+
+.inner-head1{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    left:10px;
+    background-color:white;
+    border-radius:50%;
+    width:80px;
+    height:80px;
+
+}
+.inner-head2{
+    display:flex;
+    justify-content:center;
+    position:relative;
+    right:10px;
+    background-color:white;
+    border-radius:50%;
+    width:80px;
+    height:80px;
+}
+.inner-body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+    bottom:2px;
+    width:125px;
+    height:120px;
+    border-radius:50%;
+    background-color:white;
+}
+.eye1{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:black;
+    position:relative;
+    top:25px;
+    
+}
+.eye2{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background-color:black;
+    position:relative;
+    top:25px;
+    
+}
+.inner-eye1{
+    position:relative;
+    top:3px;
+    left:2px;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background-color:white;
+}
+.inner-eye2{
+    position:relative;
+    top:3px;
+    left:2px;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background-color:white;
+}
+.upper-lip{
+    position:relative;
+    bottom:60px;
+    width:25px;
+    height:7px;
+    border-radius:50%;
+    background-color:orange;
+}
+.lower-lip{
+    position:relative;
+    bottom:62px;
+    width:20px;
+    height:7px;
+    border-radius:50%;
+    background-color:orange;
+}
+.blush1{
+    background-color:pink;
+    width:10px;
+    height:8px;
+    border-radius:50%;
+    position:relative;
+    bottom:65px;
+    left:30px;
+}
+.blush2{
+    background-color:pink;
+    width:10px;
+    height:8px;
+    border-radius:50%;
+    position:relative;
+    bottom:72px;
+    right:30px;
+}
+.right-hand{
+    position:relative;
+    top:30px;
+    right:35px;
+    width:60px;
+    height:30px;
+    border-radius:50%;
+    background-color:black;
+    transform:skewY(30deg);
+
+}
+.left-hand{
+    position:relative;
+    top:57px;
+    left:35px;
+    width:60px;
+    height:30px;
+    border-radius:50%;
+    background-color:black;
+    transform:skewY(40deg);
+}
+.left-leg{
+    position:absolute;
+    top:120px;
+    right:20px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:orange;
+    transform:skewY(150deg);
+}
+.right-leg{
+    position:absolute;
+    top:120px;
+    left:20px;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:orange;
+    transform:skewY(30deg);
+}
+.moveHand{
+    animation-name:moveRightHand;
+    animation-duration:2s;
+    animation-iteration-count:infinite;
+}
+@keyframes moveRightHand{
+    50%{
+        transform:rotate(55deg);
+    }
+}
+.hand{
+    width:60px;
+    height:30px;
+    border-radius:50%;
+    background-color:black;
+    transform:skewY(40deg);
+    transform:rotate(10deg);
+}
